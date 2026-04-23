@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>CineWiki | Game of Thrones</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <h1>CineWiki</h1>
+    <ul>
+      <li><a href="../index.php">Inicio</a></li>
+      <li><a href="../Wiki.html">Wiki</a></li>
+      <li><a href="../Foro.html">Foro</a></li>
+      <li><a href="../Noticias.html">Noticias</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="detalle">
+  <a href="../wiki.html" class="back-link">← Volver a Series</a>
+  
+  <h2>Game of Thrones</h2>
+
+  <div class="info-grid">
+    <div class="poster">
+      <img src="../img/Game of Thrones.jpg" alt="Game of Thrones">
+    </div>
+    <div class="info">
+      <p><strong>📺 Creador:</strong> David Benioff y D.B. Weiss</p>
+      <p><strong>📅 Año:</strong> 2011 - 2019</p>
+      <p><strong>⏱️ Temporadas:</strong> 8</p>
+      <p><strong>🎬 Episodios:</strong> 73</p>
+      <p><strong>🎭 Género:</strong> Fantasía, Drama, Aventura</p>
+      <p><strong>⭐ Rating:</strong> 9.2/10</p>
+
+      <h3>📖 Sinopsis</h3>
+      <p>Nobles familias luchan por el control del Trono de Hierro en Poniente. Intrigas, dragones, caminantes blancos y traiciones llenan esta épica saga donde nadie está a salvo. Juego de Tronos mezcla política medieval con elementos fantásticos.</p>
+
+      <h3>🏆 Curiosidades</h3>
+      <ul class="curiosities">
+        <li>Ganó 59 Emmy, récord histórico para una serie dramática</li>
+        <li>Basada en los libros de George R.R. Martin</li>
+        <li>Los rodajes duraron 10 meses por temporada</li>
+      </ul>
+
+      <button onclick="like()" class="like-btn">❤️ Me gusta</button>
+      <p id="likes">0 likes</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>© 2026 CineWiki</p>
+</footer>
+
+<script>
+let contador = 0;
+function like() {
+  contador++;
+  document.getElementById("likes").innerText = contador + " likes";
+}
+</script>
+
+</body>
+</html>
