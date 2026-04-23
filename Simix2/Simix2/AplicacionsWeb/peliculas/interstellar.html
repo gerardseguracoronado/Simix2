@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>CineWiki | Interstellar</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <h1>CineWiki</h1>
+    <ul>
+      <li><a href="../index.php">Inicio</a></li>
+      <li><a href="../Wiki.html">Wiki</a></li>
+      <li><a href="../Foro.html">Foro</a></li>
+      <li><a href="../Noticias.html">Noticias</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="detalle">
+  <a href="../wiki.html" class="back-link">← Volver a Películas</a>
+  
+  <h2>Interestellar</h2>
+
+  <div class="info-grid">
+    <div class="poster">
+      <img src="../img/Interstellar.jpg" alt="Interstellar">
+    </div>
+    <div class="info">
+      <p><strong>🎬 Director:</strong> Christopher Nolan</p>
+      <p><strong>📅 Año:</strong> 2014</p>
+      <p><strong>⏱️ Duración:</strong> 169 min</p>
+      <p><strong>🎭 Género:</strong> Ciencia ficción, Drama, Aventura</p>
+      <p><strong>⭐ Rating:</strong> 8.7/10</p>
+
+      <h3>📖 Sinopsis</h3>
+      <p>En un futuro devastado por hambrunas, Cooper, un antiguo piloto de la NASA, es reclutado para una misión crucial: atravesar un agujero de gusano y encontrar un nuevo hogar para la humanidad. El amor de un padre hacia sus hijos es su mayor motivacion.</p>
+
+      <h3>🏆 Curiosidades</h3>
+      <ul class="curiosities">
+        <li>Kip Thorne, premio Nobel, asesor científico de la película</li>
+        <li>Las imágenes de agujeros negros se basan en ecuaciones reales de astrofísica</li>
+        <li>Hans Zimmer compuso la banda sonora sin ver ninguna escena</li>
+      </ul>
+
+      <button onclick="like()" class="like-btn">❤️ Me gusta</button>
+      <p id="likes">0 likes</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>© 2026 CineWiki</p>
+</footer>
+
+<script>
+let contador = 0;
+function like() {
+  contador++;
+  document.getElementById("likes").innerText = contador + " likes";
+}
+</script>
+
+</body>
+</html>
