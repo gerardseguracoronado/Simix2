@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>CineWiki | Oppenheimer</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <h1>CineWiki</h1>
+    <ul>
+      <li><a href="../index.php">Inicio</a></li>
+      <li><a href="../Wiki.html">Wiki</a></li>
+      <li><a href="../Foro.html">Foro</a></li>
+      <li><a href="../Noticias.html">Noticias</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="detalle">
+  <a href="../wiki.html" class="back-link">← Volver a Películas</a>
+  
+  <h2>Oppenheimer</h2>
+
+  <div class="info-grid">
+    <div class="poster">
+      <img src="../img/Oppenheimer.jpg" alt="Oppenheimer">
+    </div>
+    <div class="info">
+      <p><strong>🎬 Director:</strong> Christopher Nolan</p>
+      <p><strong>📅 Año:</strong> 2023</p>
+      <p><strong>⏱️ Duración:</strong> 180 min</p>
+      <p><strong>🎭 Género:</strong> Drama, Biopic, Historia</p>
+      <p><strong>⭐ Rating:</strong> 8.9/10</p>
+
+      <h3>📖 Sinopsis</h3>
+      <p>J. Robert Oppenheimer, el padre de la bomba atómica, lidera el Proyecto Manhattan durante la Segunda Guerra Mundial. La historia explora su génio científico, sus tormentos morales y el juicio que enfrentó por sus creaciones.</p>
+
+      <h3>🏆 Curiosidades</h3>
+      <ul class="curiosities">
+        <li>Cillian Murphy perdió 25 lbs para el papel</li>
+        <li>Filmada en formato IMAX 65mm sin efectos digitales</li>
+        <li>Triunfó en Oscars 2024 con 7 premios</li>
+      </ul>
+
+      <button onclick="like()" class="like-btn">❤️ Me gusta</button>
+      <p id="likes">0 likes</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>© 2026 CineWiki</p>
+</footer>
+
+<script>
+let contador = 0;
+function like() {
+  contador++;
+  document.getElementById("likes").innerText = contador + " likes";
+}
+</script>
+
+</body>
+</html>
