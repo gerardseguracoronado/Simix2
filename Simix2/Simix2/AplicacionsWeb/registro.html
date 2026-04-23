@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CineWiki - Crear cuenta</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="auth-page">
+  <div class="auth-bg"></div>
+  
+  <div class="auth-container">
+    <div class="auth-box">
+      <div class="auth-logo">🎬</div>
+      <h1>CineWiki</h1>
+      <h2>Crea tu cuenta gratis</h2>
+      
+      <form action="backend/registro.php" method="POST">
+        <div class="input-group">
+          <input type="text" name="usuario" placeholder="Nombre de usuario" required>
+          <span class="input-icon">👤</span>
+        </div>
+        
+        <div class="input-group">
+          <input type="email" name="email" placeholder="Correo electrónico (@gmail.com)" required>
+          <span class="input-icon">📧</span>
+        </div>
+        
+        <div class="input-group">
+          <input type="password" name="password" placeholder="Contraseña segura" required>
+          <span class="input-icon">🔒</span>
+        </div>
+        
+        <button type="submit">Crear cuenta</button>
+      </form>
+      
+      <div class="auth-links">
+        <p class="auth-link"><a href="index.php">← Volver al inicio</a></p>
+        <p class="auth-link" style="margin-top: 0.5rem;">¿Ya tienes cuenta? <a href="login.php">Inicia sesión</a></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
