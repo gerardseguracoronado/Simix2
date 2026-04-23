@@ -2,8 +2,8 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>CineWiki | Foro</title>
-  <link rel="stylesheet" href="Index.css">
+  <title>Foro | CineWiki</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -11,7 +11,7 @@
   <nav>
     <h1>CineWiki</h1>
     <ul>
-      <li><a href="Index.html">Inicio</a></li>
+      <li><a href="index.php">Inicio</a></li>
       <li><a href="Wiki.html">Wiki</a></li>
       <li><a href="Foro.html">Foro</a></li>
       <li><a href="Noticias.html">Noticias</a></li>
@@ -19,33 +19,32 @@
   </nav>
 </header>
 
-<section class="card-grid">
+<main class="detalle">
+  <h2>Foro de la comunidad</h2>
 
-  <div class="card">
-    <h3>¿Breaking Bad es la mejor serie de la historia?</h3>
-    <p>Abierto por: CineFan · 42 respuestas</p>
-  </div>
+  <input type="text" id="usuario" placeholder="Tu nombre"><br><br>
+  <textarea id="mensaje" placeholder="Escribe un comentario"></textarea><br><br>
+  <button onclick="publicar()">Publicar</button>
 
-  <div class="card">
-    <h3>Final de Interstellar explicado</h3>
-    <p>Abierto por: SpaceLover · 18 respuestas</p>
-  </div>
+  <h3>Comentarios:</h3>
+  <div id="comentarios"></div>
+</main>
 
-  <div class="card">
-    <h3>Mejores películas de superhéroes</h3>
-    <p>Abierto por: Admin · 27 respuestas</p>
-  </div>
+<script>
+function publicar() {
+  let user = document.getElementById("usuario").value;
+  let msg = document.getElementById("mensaje").value;
 
-  <div class="card">
-    <h3>Teorías sobre Stranger Things</h3>
-    <p>Abierto por: UpsideDown · 33 respuestas</p>
-  </div>
+  if(user === "" || msg === "") return;
 
-</section>
+  let comentario = document.createElement("p");
+  comentario.innerHTML = "<strong>" + user + ":</strong> " + msg;
 
-<footer>
-  <p>Foro CineWiki · Respeta las normas</p>
-</footer>
+  document.getElementById("comentarios").appendChild(comentario);
+
+  document.getElementById("mensaje").value = "";
+}
+</script>
 
 </body>
 </html>
