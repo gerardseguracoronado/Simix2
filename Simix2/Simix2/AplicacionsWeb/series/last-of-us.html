@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>CineWiki | The Last of Us</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <h1>CineWiki</h1>
+    <ul>
+      <li><a href="../index.php">Inicio</a></li>
+      <li><a href="../Wiki.html">Wiki</a></li>
+      <li><a href="../Foro.html">Foro</a></li>
+      <li><a href="../Noticias.html">Noticias</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="detalle">
+  <a href="../wiki.html" class="back-link">← Volver a Series</a>
+  
+  <h2>The Last of Us</h2>
+
+  <div class="info-grid">
+    <div class="poster">
+      <img src="../img/The Last of Us.jpg" alt="The Last of Us">
+    </div>
+    <div class="info">
+      <p><strong>📺 Creador:</strong> Craig Mazin y Neil Druckmann</p>
+      <p><strong>📅 Año:</strong> 2023 - En emisión</p>
+      <p><strong>⏱️ Temporadas:</strong> 1 (2ª confirmada)</p>
+      <p><strong>🎬 Episodios:</strong> 9</p>
+      <p><strong>🎭 Género:</strong> Drama, Terror, Aventura</p>
+      <p><strong>⭐ Rating:</strong> 8.8/10</p>
+
+      <h3>📖 Sinopsis</h3>
+      <p>En un mundo postapocalíptico, Joel, un superviviente curtido, es contratado para sacar a la adolescente Ellie de una zona de cuarentena. Lo que parece una misión de simple supervivencia se convierte en un viaje emotivo por los restos de EE.UU.</p>
+
+      <h3>🏆 Curiosidades</h3>
+      <ul class="curiosities">
+        <li>Basada en el exitoso videojuego homónimo de PlayStation</li>
+        <li>Pedro Pascal y Bella Ramsey protagonizan</li>
+        <li>Tuvo la audiencia más alta de HBO en 10 años</li>
+      </ul>
+
+      <button onclick="like()" class="like-btn">❤️ Me gusta</button>
+      <p id="likes">0 likes</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>© 2026 CineWiki</p>
+</footer>
+
+<script>
+let contador = 0;
+function like() {
+  contador++;
+  document.getElementById("likes").innerText = contador + " likes";
+}
+</script>
+
+</body>
+</html>
