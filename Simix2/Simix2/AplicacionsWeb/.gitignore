@@ -1,0 +1,33 @@
+# Archivos que git ignorará
+
+# Configuraciones locales
+config.php.local
+.env
+.env.local
+
+# Archivos temporales
+*.log
+*.tmp
+*.cache
+
+# IDE
+.vscode/
+.idea/
+*.sublime-*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Backups (subidos manualmente si es necesario)
+backup/bbdd/*.sql
+backup/proyecto/*.zip
+backup/logs/*.log
+
+# Base de datos MySQL
+*.sql.bak
+
+# Imágenes muy grandes (opusional)
+/img/*.jpg
+/img/*.png
+/img/*.jpeg
