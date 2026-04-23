@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>CineWiki | Breaking Bad</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <h1>CineWiki</h1>
+    <ul>
+      <li><a href="../index.php">Inicio</a></li>
+      <li><a href="../Wiki.html">Wiki</a></li>
+      <li><a href="../Foro.html">Foro</a></li>
+      <li><a href="../Noticias.html">Noticias</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="detalle">
+  <a href="../wiki.html" class="back-link">← Volver a Series</a>
+  
+  <h2>Breaking Bad</h2>
+
+  <div class="info-grid">
+    <div class="poster">
+      <img src="../img/Breaking Bad.jpg" alt="Breaking Bad">
+    </div>
+    <div class="info">
+      <p><strong>📺 Creador:</strong> Vince Gilligan</p>
+      <p><strong>📅 Año:</strong> 2008 - 2013</p>
+      <p><strong>⏱️ Temporadas:</strong> 5</p>
+      <p><strong>🎬 Episodios:</strong> 62</p>
+      <p><strong>🎭 Género:</strong> Drama, Crimen, Thriller</p>
+      <p><strong>⭐ Rating:</strong> 9.5/10</p>
+
+      <h3>📖 Sinopsis</h3>
+      <p>Walter White, un profesor de química con cáncer de pulmón terminal, se asocia con su antiguo alumno Jesse Pinkman para fabricar metanfetamina. Lo que empieza como una forma de asegurar el futuro de su familia, le lleva por un camino oscuro e irrefrenable hacia la locura.</p>
+
+      <h3>🏆 Curiosidades</h3>
+      <ul class="curiosities">
+        <li>Bryan Cranston ganaba 3 Emmy consecutivos como Mejor Actor</li>
+        <li>El apodo " Heisenberg" viene del químico alemán Werner Heisenberg</li>
+        <li>Creada por el mismo creador de Better Call Saul</li>
+      </ul>
+
+      <button onclick="like()" class="like-btn">❤️ Me gusta</button>
+      <p id="likes">0 likes</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>© 2026 CineWiki</p>
+</footer>
+
+<script>
+let contador = 0;
+function like() {
+  contador++;
+  document.getElementById("likes").innerText = contador + " likes";
+}
+</script>
+
+</body>
+</html>
